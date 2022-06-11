@@ -12,8 +12,8 @@ module.exports = {
             option.setName('text')
                 .setDescription('The text to qerdnsoxawduiosjcdasiojsdksl')
                 .setRequired(true)),
-    async execute(interaction) {
-        const echo = interaction.options.getString('text');
-        await interaction.reply({ content: echo});
-    },
+                async execute(interaction) {
+                    const echo = interaction.options.getString('text');
+                    await interaction.reply({ content: echo});
+                },
 };

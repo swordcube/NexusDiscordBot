@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "weather": "^1.0.4",
+    "weather.js": "^0.1.0"
+  }
 }

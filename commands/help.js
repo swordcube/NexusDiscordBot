@@ -15,22 +15,18 @@ module.exports = {
         .setTitle('Help')
         .setDescription('All commands')
         .addFields(
-            {name: 'Fun Commands', value: 'Mess with funny commands'},
-            {name: 'Kill victims (kill)', value: 'kill anyone (does not have to be a user!)'},
-            {name: 'Grave (rip)', value: 'generates a grave'},
-            {name: 'Bot Information', value: 'Debug info & Ways to support Novus Bot'},
-            {name: "Novus Bot News", value: 'New upgrades with new security improvments after a year of no new releases!'},
-            {name: 'GitHub Repository', value: 'View and fork the source code for Novus Bot and help improve the project by reporting bugs!'}
+            {name: 'echo', value: 'Repeat what a user says'},
+            {name: 'vagina', value: 'ugh'},
             );
         
  const row = new MessageActionRow()
             .addComponents(
                 new MessageButton()
-                    .setLabel('Favorite Novus Bot on GitHub!')
+                    .setLabel('Favorite Sword\'s Sex Offender on GitHub!')
                     .setStyle('LINK')
-                    .setURL('https://github.com/novusthedev/novus-bot'),
+                    .setURL('https://github.com/swordcube/nexusdiscordbot'),
             );
 
-        await interaction.reply({ content: 'Nexus Help', ephemeral: true, components: [row], embeds: [newEmbed]});
+        await interaction.reply({ content: ' ', ephemeral: true, components: [row], embeds: [newEmbed]});
     },
 };

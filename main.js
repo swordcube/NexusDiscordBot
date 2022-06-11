@@ -2,6 +2,11 @@ const { Client, Intents } = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
 const command_handler = require("./cmdhandler");
+const {
+    status,
+    funnyCircleStatus
+} = require('./conf/config.json');
+
 const {token} = require('./conf/token.json');
 const {
     version
@@ -28,7 +33,7 @@ client.once('ready', () => {
     console.log('Nexus has started!');
     console.log(`Version: ${version}`);
     command_handler.initCommands(client);
-    client.user.setPresence({ activities: [{ name: `with commands | Version: ${version}` }], status: 'online' });
+    client.user.setPresence({ activities: [{ name: `${status}` }], status: `${funnyCircleStatus}` });
   console.log(presence => console.log(`Bot presence: ${presence.activities[0].name}. Hold CTRL + C to shut down the bot.`))
 });
 
